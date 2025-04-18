@@ -1,10 +1,79 @@
+
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jun Choi – Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Welcome to Jun's Space</h1>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HERO -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <img src="Assets/7BF40B90-F2BD-4654-9926-BFF7D3593C38_1_105_c.jpeg" alt="Portrait" class="w-32 h-32 rounded-full shadow-lg mb-4">
+    <h1 class="text-4xl font-bold">Jun Choi</h1>
+    <p class="text-lg text-gray-600 mt-2 max-w-xl">
+      I’m a future <strong>Entrepreneur</strong>. I'm here to create cracks in the world.
+    </p>
+    <nav class="mt-6 space-x-4">
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-12">Selected Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="grid md:grid-cols-3 gap-6 items-center mb-12">
+        <img src="assets/project1.png" alt="Project 1 screenshot" class="rounded-lg shadow-md">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-semibold">Project One</h3>
+          <p class="mt-2 text-gray-700">
+            A brief description: tech used (HTML, CSS, JS), and what you accomplished.
+          </p>
+          <div class="mt-4">
+            <a href="https://github.com/your-username/project-one" target="_blank" class="mr-4 hover:underline">Source Code</a>
+            <a href="https://project-one.demo" target="_blank" class="hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate this block for more projects -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <p class="text-gray-700">
+        Write two or three sentences about your background, skills, and what drives you.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-md mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+      <p class="text-gray-700">
+        Email me at 
+        <a href="mailto:you@example.com" class="text-blue-600 hover:underline">you@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-gray-500 text-sm">
+    © <span id="year"></span> Your Name
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
